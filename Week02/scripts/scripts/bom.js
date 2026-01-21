@@ -8,7 +8,7 @@ button.addEventListener('click', () => {
     const deleteButton = document.createElement('button');
     
     li.textContent = input.value;
-    deleteButton.textContent = '';
+    deleteButton.textContent = '❌';
     deleteButton.setAttribute('aria-label', `Remove ${input.value}`);
     
     deleteButton.addEventListener('click', () => {
@@ -18,7 +18,10 @@ button.addEventListener('click', () => {
     li.append(deleteButton);
     list.append(li);
     
-    input.value = ''; // clear input
-    input.focus(); // focus back on input
+    input.value = ''; 
+    input.focus(); 
+  } else {
+    input.focus(); 
   }
 });
+
