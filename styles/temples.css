@@ -1,4 +1,6 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -10,13 +12,6 @@ body {
   color: #333;
   background-color: #f4f4f4;
 }
-.roboto-uniquifier {
-  font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: weight;
-  font-style: normal;
-  font-variation-settings:"width" 100;
-}
 
 header {
   background-color: #333;
@@ -26,13 +21,24 @@ header {
 }
 
 header h1 {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.5em;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: none; 
+}
+
+nav.open ul {
+  display: block;
 }
 
 nav a {
@@ -41,9 +47,24 @@ nav a {
   padding: 0.5em;
   display: block;
 }
-
+nav {
+  flex-direction: row;
+  justify-content: space-around;
+}
 nav a:hover {
   background-color: #555;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav li {
+  margin: 0 1em;
+}
+
+.hamburger {
+  display: none;
 }
 
 .hamburger {
@@ -52,37 +73,22 @@ nav a:hover {
   color: #fff;
   font-size: 1.5em;
   cursor: pointer;
-  display: block;
-  margin: 0 auto;
-}
-
-nav ul {
-  display: none;
-}
-
-nav.open ul {
-  display: block;
 }
 
 main {
-  max-width: 350px;
+  max-width: 400px;
   margin: 2em auto;
   padding: 1em;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-main h1 {
-  margin-bottom: 1em;
-}
-
-figure {
-  margin-bottom: 1em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
 }
 
 figure img {
   width: 100%;
-  height: 50%;
+  height: auto;
   display: block;
 }
 
@@ -101,6 +107,4 @@ footer {
   margin-top: 2em;
 }
 
-footer p p {
-  margin-bottom: 0.5em;
-}
+
