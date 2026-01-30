@@ -1,6 +1,7 @@
 :root {
   --primary-color: #e74c3c;
   --primary-color-light: #5dade2;
+  --green-bg: #2E865F;
   --font-family: Arial, sans-serif;
 }
 body {
@@ -72,6 +73,10 @@ main {
     grid-template-columns: 1fr 300px;
     position: relative;
     gap: 1em;
+  }
+  .place-middle section over {
+    transform: scale(1.02);
+    transition: transform 0.2s ease;
   }
   .place-image img{
     position: absolute;
