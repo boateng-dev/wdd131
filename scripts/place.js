@@ -1,8 +1,8 @@
 document.getElementById('year').textContent = new Date().getFullYear();
 document.getElementById('modified').textContent = document.lastModified;
 
-const temp = 28; // °C
-const windSpeed = 5; // km/h
+const temp = 28; 
+const windSpeed = 5; 
 const windchillEl = document.getElementById('windchill');
 
 function calculateWindChill(temp, windSpeed) {
