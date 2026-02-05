@@ -30,10 +30,12 @@ nav button:hover {
 }
 
 .temple-grid {
-  display: flex;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 1em;
   padding: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 figure {
@@ -86,12 +88,6 @@ nav .hamburger {
     display: flex;
   }
 }
-
-.temple-grid {
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
 .temple-card {
   margin: 1em;
   padding: 1em;
