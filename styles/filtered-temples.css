@@ -59,3 +59,59 @@ h2 {
   margin-top: 0;
 }
 
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin-right: 1em;
+}
+
+nav .hamburger {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+  }
+  nav .hamburger {
+    display: inline-block;
+  }
+  nav.open ul {
+    display: flex;
+  }
+}
+
+.temple-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.temple-card {
+  margin: 1em;
+  padding: 1em;
+  border: 1px solid #ccc;
+  width: 250px;
+  text-align: center;
+}
+
+.temple-card img {
+  max-width: 100%;
+  height: auto;
+}
+footer {
+  background-color: #f0f0f0;
+  padding: 1em;
+  text-align: center;
+  margin-top: 2em;
+}
+
+footer p {
+  margin: 0.5em 0;
+}
