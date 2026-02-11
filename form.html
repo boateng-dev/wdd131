@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Review Form</title>
+  <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+  <form id="review-form" method="get" action="review.html">
+    <label for="product-name">Product Name:</label>
+    <select id="product-name" name="product-name" required>
+      <option value="" disabled selected>Select a Product ...</option>
+    </select>
+
+    <label for="rating">Overall Rating:</label>
+    <div class="feature">
+<div class="rating">
+     <span class="star" data-value="1">&#9733;</span>
+  <span class="star" data-value="2]">&#9733;</span>
+  <span class="star" data-value="3">&#9733;</span>
+  <span class="star" data-value="4">&#9733;</span>
+  <span class="star" data-value="5">&#9733;</span>
+  <input type="hidden" id="rating" name="rating">
+  </div>
+</div>
+
+    <label for="installation-date">Date of Installation:</label>
+    <input type="date" id="installation-date" name="installation-date" required>
+
+    <label>Which features do you find useful?
+        <p>(Check all that apply)</p>
+    </label>
+<div class="durability" >
+  <input type="checkbox" id="durability" name="durability" value="Durability"><label for="durability"> Durability</label>
+  </div>
+  <div class="ease of use">
+  <input type="checkbox" id="ease of use" name="ease of use" value="Ease of use"><label for="ease of use"> Ease of use</label>
+  </div>
+  <div class="performance">
+  <input type="checkbox" id="performance" name="Performance" value="Performance"><label for="performance"> Performance</label>
+</div>
+<div class="design">
+  <input type="checkbox" id="design" name="design" value="Design"><label for="design"> Design</label>
+</div>
+
+    <label for="review">Written Review <span class="optional">(optional)</span></label>
+    <textarea id="review" name="review"></textarea>
+
+    <label for="yourname">Your Name <span class="optional">(optional)</span></label>
+    <input type="text" id="yourname" name="yourname">
+
+    <input type="submit" value="Post Review">
+  </form>
+  <footer>
+    <p>&copy; <span id="year"></span> Anthony Boateng, Ghana</p>
+    <p>Last modified: <span id="modified"></span></p>
+  </footer>
+  <script src="scripts/form.js"></script>
+</body>
+</html>
+
