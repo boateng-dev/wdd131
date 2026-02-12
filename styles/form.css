@@ -27,7 +27,6 @@ header h1 {
   text-align: center;
 }
 .rating {
-  display: inline-block;
   direction: rtl;
   unicode-bidi: bidi-override;  
   display: flex;
