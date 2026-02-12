@@ -18,12 +18,6 @@ header {
 
 header h1 {
   margin-bottom: 0.1rem;
-
-}
-
-label {
-  display: block;
-  margin-bottom: 10px;
 }
 .stars {
   text-align: center;
@@ -60,18 +54,9 @@ label {
 .rating label:hover label {
   color: #ffd700;
 }
-.rating {
-  direction: rtl;
-}
 
 #rating input[type="radio"] {
   display: flex;
-}
-
-#rating label {
-  font-size: 24px;
-  color: #ccc;
-  cursor: pointer;
 }
 
 #rating input[type="radio"]:checked ~ label {
@@ -129,10 +114,6 @@ input[type="checkbox"] {
   float: left;
   margin: 0 auto;
   display: block;
-}
-
-
-input[type="checkbox"] {
   width: auto;
   height: auto;
   margin-right: 10px;
