@@ -95,6 +95,7 @@ label {
   text-align: left;
   display: block;
   margin-bottom: 10px;
+  font-size: 14px;
 }
 input[type="checkbox"] {
   float: left;
@@ -147,9 +148,6 @@ input[type="submit"]:hover {
     margin: 10px auto;
     padding: 10px;
   }}
-  label {
-    font-size: 14px;
-  }
 footer {
   background-color: #000;
   color: #fff; 
