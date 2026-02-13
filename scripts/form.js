@@ -14,9 +14,13 @@ products.forEach(product => {
   productSelect.appendChild(option);
 });
 
-// handle form submission and increment review counter
 document.getElementById('review-form').addEventListener('submit', () => {
   let reviewCount = localStorage.getItem('reviewCount') || 0;
   reviewCount++;
   localStorage.setItem('reviewCount', reviewCount);
 });
+
+if (window.location.href.includes('review.html')) {
+  const reviewCount = parseInt(localStorage.getItem('reviewCount')) + 1;
+  localStorage.setItem('reviewCount', reviewCount);
+}
