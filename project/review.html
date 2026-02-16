@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review a Product - Ghanaian Product Reviews</title>
+  <link rel="stylesheet" href="styles/review.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="review.html">Review a Product</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Review a Product</h1>
+    <form id="review-form">
+      <label for="product-name">Product Name:</label>
+        <select id="product-name" name="product-name" required>
+        <option value="" disabled selected>Select a Product...</option>
+        <option value="sobolo-drink">Sobolo Drink</option>
+        <option value="ayilifes-sheabutter">Ayilifes Sheabutter</option>
+        <option value="gafrak-tiles">Gafrak Tiles</option>
+        <option value="verve-card">Verve Card</option>
+        </select>
+      <label for="rating">Rating:</label>
+      <div class="rating">
+        <input type="radio" id="star5" name="rating" value="5">
+        <label for="star5">&#9733;</label>
+        <input type="radio" id="star4" name="rating" value="4">
+        <label for="star4">&#9733;</label>
+        <input type="radio" id="star3" name="rating" value="3">
+        <label for="star3">&#9733;</label>
+        <input type="radio" id="star2" name="rating" value="2">
+        <label for="star2">&#9733;</label>
+        <input type="radio" id="star1" name="rating" value="1">
+        <label for="star1">&#9733;</label>
+      </div>
+      <label for="review">Review:</label>
+      <textarea id="review" name="review" required></textarea>
+      <input type="submit" value="Submit Review">
+    </form>
+  </main>
+  <footer>
+    <p>&copy; <span id="year"></span> Ghanaian Product Reviews</p>
+    <p><a href="references.html">References</a></p>
+  </footer>
+  <script src="scripts/review.js"></script>
+</body>
+</html>

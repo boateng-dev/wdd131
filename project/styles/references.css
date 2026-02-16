@@ -1,0 +1,19 @@
+.references ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color:#f7f7f7;
+}
+
+.references li {
+  margin-bottom: 15px;
+}
+
+.references a {
+  text-decoration: none;
+  color: #00698f;
+}
+
+.references a:hover {
+  color: #003f5f;
+}
