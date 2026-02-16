@@ -1,0 +1,40 @@
+.product-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.product-name {
+  color: #00698f;
+}
+
+.product-description {
+  line-height: 1.6;
+}
+
+.product-rating {
+  color: #f90;
+}
+#product-name {
+  color: #00698f;
+}
+
+#product-image {
+  width: 100%;
+  height: auto;
+  margin: 20px 0;
+}
+
+#product-description {
+  line-height: 1.6;
+}
+
+#reviews {
+  margin-top: 20px;
+}
