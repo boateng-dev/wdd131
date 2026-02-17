@@ -20,15 +20,15 @@
   </header>
   <main>
     <h1>Review a Product</h1>
-    <form id="review-form">
+    <form id="review-form" method="get" action="review.html">
       <label for="product-name">Product Name:</label>
-        <select id="product-name" name="product-name" required>
+      <select id="product-name" name="product-name" required>
         <option value="" disabled selected>Select a Product...</option>
         <option value="sobolo-drink">Sobolo Drink</option>
         <option value="ayilifes-sheabutter">Ayilifes Sheabutter</option>
         <option value="gafrak-tiles">Gafrak Tiles</option>
         <option value="verve-card">Verve Card</option>
-        </select>
+      </select>
       <label for="rating">Rating:</label>
       <div class="rating">
         <input type="radio" id="star5" name="rating" value="5">
@@ -41,6 +41,19 @@
         <label for="star2">&#9733;</label>
         <input type="radio" id="star1" name="rating" value="1">
         <label for="star1">&#9733;</label>
+      </div>
+      <label for="review-date">Review Date:</label>
+      <input type="date" id="review-date" name="review-date" required>
+      <label>Would you recommend?</label>
+      <div class="recomend-options">
+        <input type="checkbox" id="recommend-yes" name="recommend" value="yes">
+        <label for="recommend-yes">Yes</label>
+        <input type="checkbox" id="recommend-no" name="recommend" value="no">
+        <label for="recommend-no">No</label>
+        <input type="checkbox" id="recommend-maybe" name="recommend" value="maybe">
+        <label for="recommend-maybe">Maybe</label>
+        <input type="checkbox" id="recommend-neutral" name="recommend" value="neutral">
+        <label for="recommend-neutral">Neutral</label>
       </div>
       <label for="review">Review:</label>
       <textarea id="review" name="review" required></textarea>

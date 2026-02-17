@@ -13,14 +13,28 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+#review-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#review-form select, #review-form input[type="date"], #review-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
 .rating {
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
+  margin-bottom: 20px;
 }
 
 .rating input[type="radio"] {
-  display: none;
+  display: grid;
 }
 
 .rating label {
@@ -34,11 +48,22 @@ body {
 }
 
 #review {
-  width: 100%;
   height: 100px;
-  padding: 10px;
+}
+
+.recommend-options {
   margin-bottom: 20px;
-  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.recommend-options div {
+    margin-bottom: 5px;
+}
+
+.recommend-options label {
+  display:inline-block;
+  margin-right: 10px;
 }
 
 input[type="submit"] {
